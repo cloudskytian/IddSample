@@ -1,7 +1,7 @@
 # What Is This #
 
 This project is based on [Microsoft Indirect Display Driver Sample](https://github.com/Microsoft/Windows-driver-samples/tree/main/video/IndirectDisplay).
-I add a registry support for it to use `HKEY_CURRENT_USER\SOFTWARE\IddSampleDriver` custom display resolution and refresh rate.
+I add a registry support for it to use `HKEY_LOCAL_MACHINE\SOFTWARE\IddSampleDriver` custom display resolution and refresh rate.
 
 # How To Use #
 First, run `IddSampleInstallCer.bat` to install the signature, then run` IddSampleInstallDriver.bat` to install the driver. There is a default config that use 1920*1080 60Hz in `IddSampleInstallDriver.bat`, and you can edit it yourself.
@@ -9,7 +9,7 @@ Just run `IddSampleApp.exe` when you need to start the virtual display.
 
 # 这是个什么东西？ #
 该项目基于[微软 Indirect Display 驱动示例](https://github.com/Microsoft/Windows-driver-samples/tree/main/video/IndirectDisplay)。
-我给他加了个通过 `HKEY_CURRENT_USER\SOFTWARE\IddSampleDriver` 注册表来自定义分辨率和刷新率的功能。
+我给他加了个通过 `HKEY_LOCAL_MACHINE\SOFTWARE\IddSampleDriver` 注册表来自定义分辨率和刷新率的功能。
 
 # 咋用 #
 先运行 `IddSampleInstallCer.bat` 装一下签名，再运行 `IddSampleInstallDriver.bat` 安装驱动。`IddSampleInstallDriver.bat` 文件中有一个 1920*1080 60Hz 的默认配置，你可以手动修改它。
