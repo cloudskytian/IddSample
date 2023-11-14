@@ -34,7 +34,7 @@ void LoadSampleDefaultModes()
     HKEY hKey;
     DWORD dwType, dwValue;
     DWORD dwSize = sizeof(DWORD);
-    if (ERROR_SUCCESS == ::RegOpenKeyEx(HKEY_CURRENT_USER, _T("SOFTWARE\\IddSampleDriver"), 0, KEY_READ, &hKey))
+    if (ERROR_SUCCESS == ::RegOpenKeyEx(HKEY_LOCAL_MACHINE, _T("SOFTWARE\\IddSampleDriver"), 0, KEY_READ, &hKey))
     {
         if (RegQueryValueEx(hKey, _T("Width"), NULL, &dwType, (LPBYTE)&dwValue, &dwSize) == ERROR_SUCCESS && dwType == REG_DWORD)
         {
